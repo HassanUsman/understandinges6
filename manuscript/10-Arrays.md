@@ -729,9 +729,9 @@ let ints = new Int16Array([25, 50, 75, 100]),
     subints2 = ints.subarray(2),
     subints3 = ints.subarray(1, 3);
 
-console.log(subints1.toString());   // 25,50,75,100
-console.log(subints2.toString());   // 75,100
-console.log(subints3.toString());   // 50,75
+console.log(subints1.toString());   // 25,50,75,100 
+console.log(subints2.toString());   // 75,100 
+console.log(subints3.toString());   // 50,75 
 ```
 
 Three typed arrays are created from the original `ints` array in this example. The `subints1` array is a clone of `ints` that contains the same information. Since the `subints2` array copies data starting from index 2, it only contains the last two elements of the `ints` array (75 and 100). The `subints3` array contains only the middle two elements of the `ints` array, as `subarray()` was called with both a start and an end index.
